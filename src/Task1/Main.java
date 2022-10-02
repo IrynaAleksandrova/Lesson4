@@ -14,7 +14,7 @@ public class Main {
         N = console.nextInt();
         array = new int[N];
         for (int i = 0; i < array.length; i++) {
-            array[i] = (int) (Math.random() * N);
+            array[i] = (int) ((Math.random() * N)+1);
         }
         int min = array[0];
         for (int i = 1; i < array.length; i++) {
