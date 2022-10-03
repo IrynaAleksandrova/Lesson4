@@ -27,9 +27,9 @@ public class Main {
             if (array[i] > max)
                 max = array[i];
         System.out.println(max);
-        int sum = 0;
-        int a = 0;
-        for (int i : array) {
+        double sum = 0;
+        double a = 0;
+        for (double i : array) {
             sum += i;
             a = sum / array.length;
         }
