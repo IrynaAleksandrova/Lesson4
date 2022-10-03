@@ -15,7 +15,7 @@ public class Main {
         do {
             System.out.println("Введите число: ");
             value = console.nextInt();
-        } while ((value < 5) || (value >= 10));
+        } while ((value < 5) || (value > 10));
         int[] massFirst = new int[value];
         int counterValue = 0;
         for (int j = 0; j < massFirst.length; j++) {
@@ -27,9 +27,9 @@ public class Main {
         System.out.println(Arrays.toString(massFirst));
         int[] massSecond = new int[counterValue];
         int i = 0;
-        for (int j = 0; j < massFirst.length; j++) {
-            if ((massFirst[j] % 2) == 0) {
-                massSecond[i] = massFirst[j];
+        for (int k : massFirst) {
+            if ((k % 2) == 0) {
+                massSecond[i] = k;
                 i++;
             }
         }

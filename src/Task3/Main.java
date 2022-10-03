@@ -23,9 +23,9 @@ public class Main {
         if (counterValue > 0) {
             int[] aResult = new int[a.length - counterValue];
             int i = 0;
-            for (int j = 0; j < a.length; j++) {
-                if (a[j] != value) {
-                    aResult[i] = a[j];
+            for (int k : a) {
+                if (k != value) {
+                    aResult[i] = k;
                     i++;
                 }
             }

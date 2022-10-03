@@ -1,5 +1,6 @@
 package Task1;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -10,23 +11,21 @@ public class Main {
     public static void main(String[] args) {
         int[] array;
         Scanner console = new Scanner(System.in);
+        System.out.println("Введите произвольное число: ");
         int N;
         N = console.nextInt();
         array = new int[N];
-        for (int i = 0; i < array.length; i++) {
-            array[i] = (int) ((Math.random() * N)+1);
-        }
+        for (int i = 0; i < array.length; i++) array[i] = ((int) (Math.random() * N)+1);
+        System.out.println(Arrays.toString(array));
         int min = array[0];
-        for (int i = 1; i < array.length; i++) {
+        for (int i = 1; i < array.length; i++)
             if (array[i] < min)
                 min = array[i];
-        }
         System.out.println(min);
         int max = array[0];
-        for (int i = 1; i < array.length; i++) {
+        for (int i = 1; i < array.length; i++)
             if (array[i] > max)
                 max = array[i];
-        }
         System.out.println(max);
         int sum = 0;
         int a = 0;
