@@ -13,25 +13,25 @@ public class Main {
         System.out.println(Arrays.toString(a));
         System.out.println(Arrays.toString(b));
 
-        int sum = 0;
-        int w = 0;
-        for (int i : a) {
+        double sum = 0;
+        double w = 0;
+        for (double i : a) {
             sum += i;
             w = sum / a.length;
         }
         System.out.println(w);
 
-        int sun = 0;
-        int v = 0;
-        for (int i : b) {
+        double sun = 0;
+        double v = 0;
+        for (double i : b) {
             sun += i;
             v = sun / b.length;
         }
         System.out.println(v);
         if (w > v) {
-            System.out.println("Среднее значение массива а больше");
+            System.out.println("Среднее значение первого массива (а) больше");
         } else if (w < v) {
-            System.out.println("Среднее значение массива b больше");
+            System.out.println("Среднее значение второго массива (b) больше");
         } else {
             System.out.println("Массивы равны");
         }
